@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+i {
+    margin: 8px;
+}
+p {
+    text-align: justify;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100vw;
+    height: 10vh;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding-left: 100px;
+}
+
+nav ul li {
+    margin-right: 50px;
+   
+}
+
+nav ul img{
+    width: 8vh;
+    height:auto;
+ }
+
+nav button {
+    margin-right: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 13px;
+    width: 110px;
+    height: 35px;
+}
+button a{
+    color: #ffffff;
+}
+
+section{
+    background-color: white;
+    border-radius: 1%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10vh;
+}
+
+.text {
+    margin: 50px;
+    width: 50%;
+}
+
+.text h1 {
+    padding-top: 50px;
+ }
+
+.text button {
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 13px;
+    width: 75px;
+    height: 28px;
+}
+
+.download {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.sosmed {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sosmed i{
+    border-radius: 50%;
+    background-color: black;
+    color: #ffffff;
+}
+
+.card {
+    background-color: azure;
+    margin: 50px;
+    width: 40%;
+    height: auto;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+}
+.card img {
+    padding: 0;
+    margin-top: -35px;
+    width:100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.card h2{
+    margin-top:10px;
+}
+
+.card p {
+    margin-top: -20px;
+    text-align: justify;
+}
