@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+i {
+    margin: 8px;
+}
+p {
+    text-align: justify;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100vw;
+    height: 10vh;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding-left: 100px;
+}
+
+nav ul li {
+    margin-right: 50px;
+   
+}
+
+nav ul img{
+    width: 8vh;
+    height:auto;
+ }
+
+nav button {
+    margin-right: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 13px;
+    width: 110px;
+    height: 35px;
+    cursor: pointer;
+}
+button a{
+    color: #ffffff;
+}
+
+form{
+    margin: 1rem auto;
+    max-width: 30rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+ form div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+label{
+    text-align: left;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: .5rem;
+    margin-bottom: -0.8rem;
+}
+
+form div input,
+form div select,
+form div textarea {
+    width: 30rem;
+    padding:1.5rem;
+    font-size: 1rem;
+    color: black;
+    background-color: #ffffff;
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+textarea {
+    resize: none;
+}
+
+form .button{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button button {
+    margin-top: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 13px;
+    width: 110px;
+    height: 28px;
+    cursor: pointer;
+}
+
