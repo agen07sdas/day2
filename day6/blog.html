@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/blog.css">
+    <title>day 6</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <img src="assets/img/dumways.png" alt="">
+                </li>
+                <li>
+                    <h5><a href="index.html">Home</a></h5>
+                </li>
+                <li>
+                    <h4><a href="blog.html" style="color: rgb(255, 42, 0);">My Projects</a></h4>
+                </li>
+            </ul>
+            <button><a href="contact.html">Contact me</a></button>
+        </nav>
+        <main class="nav">
+            <button style="background-color: transparent; border: none; cursor: pointer;" onclick="openHamburger()">
+                <i class='bx bx-menu bx-sm'></i>
+            </button>
+            
+        </main>
+        <div class="blokMenu" id="blokMenu">
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+
+    <section class="form-blog">
+        <form onsubmit="addProject(event)">
+            <div class="title">
+                <label for="name">Project Name</label>
+                <input type="text" id="name" data-index="name">
+            </div>
+
+            <div class="date">
+                <div class="star">
+                    <label for="start">Start Date</label>
+                    <input type="date" id="start" data-index="start">
+                </div>
+                <div class="end">
+                    <label for="end">End Date</label>
+                    <input type="date" id="end" data-index="end">
+                </div> 
+            </div>
+
+            <div class="content">
+                <label for="content">Description</label>
+                <textarea name="content" id="content" cols="20" rows="10" data-index="content"></textarea>
+            </div>
+
+
+
+            <div class="tipe">
+                <label for="tipe">Technologies</label>
+                <div class="option1">
+                    <input type="checkbox" id="nodeJs" name="tekno" value="Node Js" data-index="teknologies">
+                    <label for="nodeJs">Node Js</label>
+                    <input type="checkbox" id="reactJs" name="tekno" value="React Js" data-index="teknologies">
+                    <label for="reactJs">React Js</label>
+                </div>
+                <div class="option2">
+                    <input type="checkbox" id="nextJs" name="tekno" value="Next Js" data-index="teknologies">
+                    <label for="nextJs">Next Js</label>
+                    <input type="checkbox" id="typescript" name="tekno" value="TypeScript" data-index="teknologies">
+                    <label for="typescript">TypeScript</label>
+                </div>
+            </div>
+            <div class="file">
+                <label for="file">Foto</label>
+                <input type="file" id="file" name>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <hr>
+    </section>
+    <br><br><hr>
+    <section class="card-project">
+        <h1>My Projects</h1>
+        <main class="card">
+
+            <!-- card -->
+            <!-- <div class="box">
+                <img src="assets/img/my.jpg" alt="">
+                <h5>JUDUL DISINI</h5>
+                <P class="durasi">Durasi</P>
+                <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                <div class="icon">
+                    <a href="#"><i class='bx bxl-play-store bx-sm' style="color:black;"></i></a>
+                    <a href="#"><i class='bx bxl-android bx-sm' ></i></a>
+                    <a href="#"><i class='bx bxl-java bx-sm' ></i></a>
+                </div>
+                <div class="tombol">
+                    <button>Edit</button>
+                    <button>Delete</button>
+                </div>      
+            </div> -->
+        </main>
+    </section>
+
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

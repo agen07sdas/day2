@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <title>Day 6</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <img src="assets/img/dumways.png" alt="">
+                </li>
+                <li>
+                    <h5><a href="index.html">Home</a></h5>
+                </li>
+                <li>
+                    <h5><a href="blog.html">My Projects</a></h5>
+                </li>
+            </ul>
+            <button><a href="contact.html">Contact</a></button>
+        </nav>
+        <main class="nav">
+            <button style="background-color: transparent; border: none; cursor: pointer;" onclick="openHamburger()">
+                <i class='bx bx-menu bx-sm'></i>
+            </button>
+            
+        </main>
+        <div class="blokMenu" id="blokMenu">
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </header>
+    
+
+    <form>
+        <h2>Mo Kirim Pesan</h2>
+
+        <div class="name">
+            <label for="name">Nama :</label>
+            <input type="text" id="name" class="name">
+        </div>
+
+        <div class="email">
+            <label for="email">Email :</label>
+            <input type="text" id="email" class="email">
+        </div>
+
+        <div class="phone">
+            <label for="number">Phone Number :</label>
+            <input type="text" id="number" class="number">
+
+        </div>
+            
+        <div class="pilih">
+            <label for="perlu">Keperluan..?</label>
+            <select name="perlu" id="perlu">
+                <option value="cerita">Cerita</option>
+                <option value="pinjemDuit"> Pinjem Duit</option>
+                <option value="nongkrong">Nongki</option>
+            </select>
+        </div>
+        
+        <div class="pesan">
+            <label for="pesan">Pesan :</label>
+            <textarea name="pesan" id="pesan" cols="30" rows="10"></textarea>
+        </div>
+        
+        <div class="button">
+            <button type="submit"  onclick="submitData()">contact</button>
+        </div>
+    </form>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

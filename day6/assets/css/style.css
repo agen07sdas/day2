@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+i {
+    margin: 8px;
+}
+p {
+    text-align: justify;
+}
+
+/* navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100vw;
+    height: 10vh;
+}
+
+header .nav2 {
+    display: none;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding-left: 100px;
+}
+
+nav ul li {
+    margin-right: 50px;
+   
+}
+
+nav ul img{
+    width: 8vh;
+    height:auto;
+ }
+
+nav button {
+    margin-right: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 13px;
+    width: 110px;
+    height: 35px;
+}
+button a{
+    color: #ffffff;
+}
+header .nav{
+    display: none;
+}
+
+.blokMenu {
+    font-size: 23px;
+    list-style-type: none;
+    display: none;
+    flex-direction: column;
+}
+
+
+
+
+/* end navbar */
+
+/* section */
+
+h1 {
+    text-align: center;
+}
+section{
+    background-color: azure;
+    border-radius: 1%;
+    /* box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); */
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    margin: 12vh;
+}
+
+.text {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* align-items: center; */
+}
+
+.text img {
+    padding: 0;
+    margin-top: -35px;
+    width:60%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.text .item{
+    margin: 1rem;
+    width:30%;
+}
+
+.item .teknologi {
+    margin-top: 5rem;
+}
+
+.teknologi .item-teknologi {
+    display: flex;
+    flex-direction: block;
+    justify-content:space-between;
+    /* align-items: stretch; */
+
+}
+
+/* .teknologi .item-teknologi a i{
+    margin-right: 1rem;
+} */
+
+.artikel {
+    margin-top: 4rem;
+}
+
+article {
+    text-align: justify;
+}
+
+/* media screen tablet */
+
+@media (max-width: 992px) {
+    .duration p {
+        font-size: .8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    body h1 {
+        font-size: 1.5rem;
+        margin-bottom: -3rem;
+    }
+
+    .duration p {
+        font-size: .5rem;
+    }
+
+    .teknologi div a{
+        font-size: .5rem;
+    }
+
+    main article {
+        font-size: .8rem;
+    }
+
+}
+
+@media (max-width: 479px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+    nav{
+        display: none;
+    }
+
+    header .nav {
+        display:block;
+    }
+
+
+    .blokMenu .a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #9a9a9a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    border-top: 1px solid #fff; /* Garis pembatas putih */
+}
+    header .nav2 {
+        display: flex;
+
+    }
+
+    body h1 {
+        margin-top: 3rem;
+    }
+    section {
+        margin: 0;
+        margin-top:8rem;
+        padding: 0;
+    }
+
+    .text {
+        padding: 0;
+        margin: 0;
+    }
+
+    .text img{
+        width:90%;
+    }
+
+    .text  .item {
+        /* display: flex; */
+        /* justify-content: flex-start; */
+        /* align-items:center; */
+    }
+
+    .item .duration p,
+    .item .duration p i{
+        margin: 0;
+        padding: 0;
+        font-size: .5rem;
+    }
+
+    .item .duration,
+    .item .teknologi {
+        padding: 0;
+        margin: 0 .5rem;
+        display: block;
+        text-align: center;
+    }
+
+    article {
+        margin: 0 1rem;
+    }
+
+    .artikel{
+        margin-top: -.8rem;
+    }
+
+
+}
