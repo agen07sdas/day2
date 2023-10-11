@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: aliceblue;
+}
+i {
+    margin: 8px;
+}
+p {
+    text-align: justify;
+}
+
+/* navbar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    width: 100vw;
+    height: 10vh;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding-left: 100px;
+}
+
+nav ul li {
+    margin-right: 50px;
+   
+}
+
+nav ul img{
+    width: 8vh;
+    height:auto;
+ }
+
+nav button {
+    margin-right: 100px;
+    background-color: black;
+    color: white;
+    border-radius: 13px;
+    width: 110px;
+    height: 35px;
+    cursor: pointer;
+}
+button a{
+    color: #ffffff;
+}
+
+.nav{
+    display: none;
+}
+
+.blokMenu {
+    font-size: 23px;
+    list-style-type: none;
+    display: none;
+    flex-direction: column;
+}
+
+
+
+/* form tambah content */
+.form-blog {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    width: 30rem;
+    margin: 0 auto;
+}
+
+/* form */
+.form-blog .title label,
+.form-blog .date .star,
+.form-blog .date .end,
+.form-blog .content label,
+.form-blog .tipe label,
+.form-blog .file label {
+    display: block;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+textarea{
+    resize: none;
+    height: 10rem;
+}
+
+.form-blog .title input,
+.form-blog .content textarea,
+.form-blog .file input{
+    width: 30rem;
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,1);
+    border-radius: .5rem;
+}
+
+/* Align the Start Date and End Date inputs side by side */
+.form-blog .date {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin: .5rem
+}
+
+.star input, 
+.end input {
+    width: 14rem;
+    box-shadow: 0px 0px 1px 0px rgba(0,0,0,1); /* Untuk memberikan sedikit ruang di antara elemen */
+    border-radius: .5rem;   
+  }
+
+
+
+/* Style the Technologies checkboxes to be side by side */
+.form-blog .tipe {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction:column;
+    margin: 0 auto;
+    padding: 0 auto;
+}
+
+.form-blog .tipe .option1,
+.form-blog .tipe .option2 {
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    width: 15rem;
+}
+
+/* Style the File input and label */
+.form-blog .file label {
+    display: flex;
+    align-items: center;
+    width: 1rem;
+    margin-right: 5px;
+}
+
+.form-blog .file input[type="file"] {
+    flex-grow: 1;
+}
+
+.form-blog button {
+    width: 10rem;
+    padding: 0.5rem;
+    background-color: #fe4e30;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s ease;
+    margin-top: 1rem;
+}
+
+.form-blog button:hover {
+    opacity: 0.6;
+}
+
+
+/* project */
+h1{
+    text-align: center;
+}
+ 
+.card-project main{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 2rem;
+    /* margin: 5rem; */
+    margin-top: 2rem;
+}
+
+.card-project main .box {
+    flex: 1 1 calc(33.33% - 2rem);
+    justify-content: center;
+    margin: auto;
+    max-width: 20rem;
+    height: 35rem;
+    background-color: aqua;
+    /* padding: 3rem 2rem 4rem; */
+    border-radius:2rem;
+    text-align: center;
+    border: .2rem solid #00b3ff;
+    transition: .5s ease;
+    margin-bottom: 2rem;
+}
+
+.card-project main .box:hover {
+    border-color: black;
+    transform: scale(1.02);
+}
+
+.box img {
+    max-width: 100%;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.box h5{
+    font-size:1.5rem;
+    padding:0;
+    margin: 0;
+}
+
+.box .durasi {
+    font-size: .5rem;
+    margin: 1rem;
+}
+
+.box .detail {
+    font-size: .8rem;
+    margin: 1rem 1rem;
+}
+
+.box .icon {
+    display: flex;
+    align-items: center;
+    /* justify-content: flex-start; */
+    margin-bottom: .5rem;
+}
+
+.box .icon a i {
+   color: black;
+   font-size: 1.5rem;
+    margin-right: 1rem;
+}
+
+.box .tombol{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.box .tombol button{
+    margin: 0 2rem;
+    background-color: black;
+    color: white;
+    border-radius: 13px;
+    flex: 1;
+    /* width: 110px; */
+    height: 35px;
+    cursor: pointer;
+}
+
+
+@media (max-width: 992px) {
+
+}
+
+@media (max-width: 768px){
+
+
+}
+
+@media (max-width: 479px){
+    body {
+        padding: 0;
+        margin: 0;
+        max-width: 90%;
+    }
+
+    nav{
+        display: none;
+    }
+
+    .nav {
+        display: block;
+    }
+
+    .blokMenu .a {
+        text-decoration: none;
+        color: #fff;
+        background-color: #9a9a9a;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        border-top: 1px solid #fff; /* Garis pembatas putih */
+    }
+
+    .form-blog {
+        max-width: 90%;
+        margin-right: 2rem;
+        /* align-items: center;
+        justify-content: center; */
+    }
+
+    .form-blog .title label,
+    .form-blog .date .star,
+    .form-blog .date .end,
+    .form-blog .content label,
+    .form-blog .tipe label,
+    .form-blog .file label {
+        width: 70%; 
+    }
+
+    .form-blog .date {
+        display: block;
+        justify-content: space-between;
+        width: 50%;
+        margin: 0;
+    }
+}
