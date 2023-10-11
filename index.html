@@ -7,25 +7,43 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- css -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Day 2</title>
+    <title>Day 6</title>
 
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <li>
-                <img src="assets/img/dumways.png" alt="">
-            </li>
-            <li>
-                <h4 ><a href="index.html" style="color: rgb(255, 42, 0);">Home</a></h4>
-            </li>
-            <li>
-                <h5><a href="blog.html">My Projects</a></h5>
-            </li>
-        </ul>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li>
+                    <img src="assets/img/dumways.png" alt="">
+                </li>
+                <li>
+                    <h4 ><a href="index.html" style="color: rgb(255, 42, 0);">Home</a></h4>
+                </li>
+                <li>
+                    <h5><a href="blog.html">My Projects</a></h5>
+                </li>
+                <li>
+                    <h5 ><a href="testi.html">Testimonial</a></h5>
+                </li>
+            </ul>
+    
+            <button><a href="contact.html">Contact</a></button>
+        </nav>
+        <main class="nav">
+            <button style="background-color: transparent; border: none; cursor: pointer;" onclick="openHamburger()">
+                <i class='bx bx-menu bx-sm'></i>
+            </button>
+            
+        </main>
+        <div class="blokMenu" id="blokMenu">
+            <a href="index.html">Home</a>
+            <a href="blog.html">Blog</a>
+            <a href="contact.html">Contact</a>
+            <a href="testi.html">Testimonial</a>
+        </div>
 
-        <button><a href="contact.html">Contact</a></button>
-    </nav>
+    </header>
  
     <h1>Hi Welcome to my WEB</h1>
     <section>
@@ -35,7 +53,7 @@
             <div class="item">
                 <div class="duration">
                     <h3>Duration</h3>
-                    <p><i class='bx bxs-calculator bx-sm'></i> 12 januari 2021 - 11 februari 2021</p>
+                    <p><i class='bx bxs-calculator bx-sm'></i>12 Jan 2021 - 11 Feb 2021</p>
                     <p><i class='bx bxs-time bx-sm'></i> 1 month</p>
                 </div>
     
@@ -72,6 +90,7 @@
                 Semoga perjalanan saya di kampus ini dapat memberikan dampak positif yang lebih besar lagi di masa depan.    
             </article>
         </main>
+        <script src="assets/js/main.js"></script>
         
 </body>
 </html>
