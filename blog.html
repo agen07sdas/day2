@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/blog.css">
-    <title>day4</title>
+    <title>day 6</title>
 </head>
 <body>
     <header>
@@ -19,32 +19,50 @@
                 <li>
                     <h4><a href="blog.html" style="color: rgb(255, 42, 0);">My Projects</a></h4>
                 </li>
+                <li>
+                    <h5 ><a href="testi.html">Testimonial</a></h5>
+                </li>
             </ul>
             <button><a href="contact.html">Contact me</a></button>
         </nav>
+
+        
     </header>
+
+    <div class="nav">
+        <button style="background-color: transparent; border: none; cursor: pointer;" onclick="openHamburger()">
+            <i class='bx bx-menu bx-sm'></i>
+        </button>
+    </div>
+    
+    <div class="blokMenu" id="blokMenu">
+        <a href="index.html">Home</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+        <a href="testi.html">Testimonial</a>
+    </div>
 
     <section class="form-blog">
         <form onsubmit="addProject(event)">
             <div class="title">
                 <label for="name">Project Name</label>
-                <input type="text" id="name">
+                <input type="text" id="name" data-index="name">
             </div>
 
             <div class="date">
                 <div class="star">
                     <label for="start">Start Date</label>
-                    <input type="date" id="start">
+                    <input type="date" id="start" data-index="start">
                 </div>
                 <div class="end">
                     <label for="end">End Date</label>
-                    <input type="date" id="end">
+                    <input type="date" id="end" data-index="end">
                 </div> 
             </div>
 
             <div class="content">
                 <label for="content">Description</label>
-                <textarea name="content" id="content" cols="20" rows="10"></textarea>
+                <textarea name="content" id="content" cols="20" rows="10" data-index="content"></textarea>
             </div>
 
 
@@ -52,15 +70,15 @@
             <div class="tipe">
                 <label for="tipe">Technologies</label>
                 <div class="option1">
-                    <input type="checkbox" id="nodeJs" name="tekno" value="Node Js">
+                    <input type="checkbox" id="nodeJs" name="tekno" value="Node Js" data-index="teknologies">
                     <label for="nodeJs">Node Js</label>
-                    <input type="checkbox" id="reactJs" name="tekno" value="React Js">
+                    <input type="checkbox" id="reactJs" name="tekno" value="React Js" data-index="teknologies">
                     <label for="reactJs">React Js</label>
                 </div>
                 <div class="option2">
-                    <input type="checkbox" id="nextJs" name="tekno" value="Next Js">
+                    <input type="checkbox" id="nextJs" name="tekno" value="Next Js" data-index="teknologies">
                     <label for="nextJs">Next Js</label>
-                    <input type="checkbox" id="typescript" name="tekno" value="TypeScript">
+                    <input type="checkbox" id="typescript" name="tekno" value="TypeScript" data-index="teknologies">
                     <label for="typescript">TypeScript</label>
                 </div>
             </div>
